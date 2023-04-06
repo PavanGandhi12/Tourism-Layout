@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none !important;
+}
+img {
+  max-width: 100%;
+}
+:root {
+  --yellowmild: #b4b63d;
+  --backgroundcolor: rgb(58 51 51 / 78%);
+  --white: #fff;
+  --yellow: #e29900;
+  --black: black;
+  --white-yellow: rgb(236 239 233);
+  --grey: hsl(16deg 7% 30%);
+}
+
+header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: var(--grey);
+  border-top: 3px solid var(--yellow);
+}
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+}
+.mainbanner {
+  width: 100%;
+  position: relative;
+}
+.mainbanner img {
+  width: 100%;
+  height: 100vh;
+}
+.nav-link {
+  color: var(--white-yellow) !important;
+}
+.bannersection {
+  position: absolute;
+  max-width: 1140px;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 15px;
+  background-color: rgba(58, 51, 51, 0.784);
+}
+label {
+  color: var(--white-yellow);
+}
+.space {
+  padding: 15px 0;
+}
+.null {
+  padding: 50px 0;
+}
+.colblack {
+  background-color: var(--black);
+  color: var(--white);
+}
+.book {
+  padding: 7px 35px;
+}
+/* 4 Boxes start here */
+.maindiv {
+  background-color: var(--black);
+  position: relative;
+  color: var(--white);
+  padding: 10px;
+  border: 2px solid var(--yellow);
+}
+.maindiv h1,
+.maindiv h4 {
+  color: var(--yellow);
+}
+.hide {
+  /* position: absolute; */
+  top: 35%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: var(--black);
+  padding: 05px 0;
+}
+.sizeh1 {
+  font-weight: 700;
+  font-size: 120px;
+}
+/* About us */
+.part1 {
+  position: relative;
+}
+.part1::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  top: -15%;
+  right: -5%;
+  background-color: var(--yellow);
+}
+.part1::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  top: -5%;
+  right: -15%;
+  background-color: var(--yellow);
+}
+.part2,
+.part4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+.part2::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  bottom: -5%;
+  left: 5%;
+  background-color: var(--yellow);
+}
+.part2::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  left: -5%;
+  bottom: 5%;
+  background-color: var(--yellow);
+}
+.part3 {
+  position: relative;
+}
+.part3::before {
+  content: "";
+  position: absolute;
+
+  width: 2px;
+  height: 100px;
+  top: -5%;
+  right: 5%;
+  background-color: var(--yellow);
+}
+.part3::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  top: 5%;
+  right: -5%;
+  background-color: var(--yellow);
+}
+.part4::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100px;
+  left: -5%;
+  bottom: -10%;
+  background-color: var(--yellow);
+}
+.part4::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  left: -15%;
+  bottom: -5%;
+  background-color: var(--yellow);
+}
+.swift {
+  padding: 10px 25px;
+  border: 2px solid var(--yellow);
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+.display {
+  display: none;
+}
+.display2 {
+  display: block;
+}
+/* Tour Package */
+
+.subdivision {
+  position: relative;
+  border: 2px solid black;
+}
+.subdivision::before {
+  content: "";
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  bottom: 15%;
+  left: 5%;
+  border: 2px solid var(--yellow);
+}
+/* .radio {
+  width: 100%; for slider in place of col-12
+} */
+.over {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 7px;
+  background-color: var(--backgroundcolor);
+  color: var(--white);
+}
+/* Testimony */
+.backimage {
+  background-image: linear-gradient(
+      to bottom,
+      rgb(184 179 82 / 48%),
+      rgb(62 62 41 / 65%)
+    ),
+    url("../images/pexels-shivam-tak-4481330.jpg");
+  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.merge {
+  margin-top: 60px;
+}
+.merge2 {
+  margin-top: 20px;
+  display: inline-block;
+}
+.three {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+.pride {
+  overflow: hidden;
+}
+.pride img {
+  width: 120px !important;
+  height: 120px !important;
+  border-radius: 50%;
+  margin: auto;
+}
+
+/* footer */
+.front {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(66, 50, 50, 0.747),
+      rgba(67, 52, 52, 0.789)
+    ),
+    url(../images/pexels-pixabay-208745.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 20px 0 30px;
+}
+.split {
+  display: flex;
+  flex-wrap: wrap;
+}
+.valve {
+  /* width: 14.28%; */
+  width: 100%;
+}
+.nest {
+  line-height: 30px;
+}
+.nest i {
+  font-size: 25px;
+  margin-right: 15px;
+}
+.nest a {
+  display: block;
+  color: var(--white);
+  text-decoration: none;
+}
+.nest span {
+  color: var(--yellow);
+  font-size: 24px;
+}
+.nest .oreo {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 30px;
+}
